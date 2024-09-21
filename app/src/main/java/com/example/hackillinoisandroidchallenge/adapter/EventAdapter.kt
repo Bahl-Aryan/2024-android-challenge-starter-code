@@ -1,3 +1,5 @@
+import android.content.Intent
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -45,7 +47,14 @@ class EventAdapter(private val eventList: List<Event>) : RecyclerView.Adapter<Ev
 
         if (event.locations.isNotEmpty()) {
             val location = event.locations[0]
-            holder.eventLocation.text = "Location: ${location.description} (${location.latitude}, ${location.longitude})"
+            holder.eventLocation.text = "Location: ${location.description}"
+
+            holder.eventLocation.setOnClickListener {
+                val gmmIntentUri = Uri.parse("geo:${location.latitude},${location.longitude}?q=${Uri.encode(location.description)}")
+                val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
+                mapIntent.setPackage("com.google.android.apps.maps")
+                holder.itemView.context.startActivity(mapIntent)
+            }
         }
 
         // Load map image using Picasso or Glide

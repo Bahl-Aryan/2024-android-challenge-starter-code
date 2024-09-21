@@ -9,6 +9,7 @@ import androidx.lifecycle.Observer
 import androidx.viewpager2.widget.ViewPager2
 import com.example.hackillinoisandroidchallenge.adapter.ViewPagerAdapter
 import com.example.hackillinoisandroidchallenge.viewmodel.EventViewModel
+import java.time.format.DateTimeFormatter
 
 class MainActivity : FragmentActivity() {
 
@@ -25,13 +26,14 @@ class MainActivity : FragmentActivity() {
             val adapter = ViewPagerAdapter(this, groupedEvents)
             viewPager.adapter = adapter
 
-            // Link TabLayout and ViewPager2
+            val dayFormatter = DateTimeFormatter.ofPattern("EEEE")
+
             TabLayoutMediator(tabLayout, viewPager) { tab, position ->
                 val day = adapter.getDay(position)
-                tab.text = day.toString() // Show the date on the tab
+                tab.text = day.format(dayFormatter)
             }.attach()
         })
 
-        eventViewModel.fetchEvents() // Fetch events and group by day
+        eventViewModel.fetchEvents() // Fetch events
     }
 }

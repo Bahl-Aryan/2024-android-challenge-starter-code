@@ -10,47 +10,61 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textSize="18sp"/>
+        android:textSize="18sp"
+        android:fontFamily="@font/orbitron"
+        android:textColor="@color/primaryColor"/>
 
     <TextView
         android:id="@+id/eventDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="14sp"
-        android:paddingTop="4dp"/>
+        android:paddingTop="4dp"
+        android:fontFamily="@font/orbitron"
+        android:textColor="@color/primaryColor"/>
 
     <TextView
         android:id="@+id/eventStartTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="14sp"
-        android:paddingTop="4dp"/>
+        android:paddingTop="4dp"
+        android:fontFamily="@font/orbitron"
+        android:textColor="@color/primaryColor"/>
 
     <TextView
         android:id="@+id/eventEndTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="14sp"
-        android:paddingTop="4dp"/>
+        android:paddingTop="4dp"
+        android:fontFamily="@font/orbitron"
+        android:textColor="@color/primaryColor"/>
 
     <TextView
         android:id="@+id/eventType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="14sp"
-        android:paddingTop="4dp"/>
+        android:paddingTop="4dp"
+        android:fontFamily="@font/orbitron"
+        android:textColor="@color/primaryColor"/>
 
     <TextView
         android:id="@+id/eventLocation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="14sp"
-        android:paddingTop="4dp"/>
+        android:paddingTop="4dp"
+        android:fontFamily="@font/orbitron"
+        android:textColor="@color/primaryColor"/>
 
     <ImageView
         android:id="@+id/mapImageView"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:scaleType="centerCrop"
-        android:paddingTop="8dp"/>
+        android:paddingTop="8dp"
+        android:fontFamily="@font/orbitron"
+        android:textColor="@color/primaryColor"/>
 </LinearLayout>
