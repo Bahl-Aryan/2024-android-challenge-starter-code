@@ -12,7 +12,7 @@
         android:textStyle="bold"
         android:textSize="18sp"
         android:fontFamily="@font/orbitron"
-        android:textColor="@color/primaryColor"/>
+        android:textColor="@color/textColorPrimary"/>
 
     <TextView
         android:id="@+id/eventDescription"
@@ -21,7 +21,7 @@
         android:textSize="14sp"
         android:paddingTop="4dp"
         android:fontFamily="@font/orbitron"
-        android:textColor="@color/primaryColor"/>
+        android:textColor="@color/textColorPrimary"/>
 
     <TextView
         android:id="@+id/eventStartTime"
@@ -30,7 +30,7 @@
         android:textSize="14sp"
         android:paddingTop="4dp"
         android:fontFamily="@font/orbitron"
-        android:textColor="@color/primaryColor"/>
+        android:textColor="@color/textColorPrimary"/>
 
     <TextView
         android:id="@+id/eventEndTime"
@@ -39,7 +39,7 @@
         android:textSize="14sp"
         android:paddingTop="4dp"
         android:fontFamily="@font/orbitron"
-        android:textColor="@color/primaryColor"/>
+        android:textColor="@color/textColorPrimary"/>
 
     <TextView
         android:id="@+id/eventType"
@@ -48,7 +48,7 @@
         android:textSize="14sp"
         android:paddingTop="4dp"
         android:fontFamily="@font/orbitron"
-        android:textColor="@color/primaryColor"/>
+        android:textColor="@color/textColorPrimary"/>
 
     <TextView
         android:id="@+id/eventLocation"
@@ -57,7 +57,7 @@
         android:textSize="14sp"
         android:paddingTop="4dp"
         android:fontFamily="@font/orbitron"
-        android:textColor="@color/primaryColor"/>
+        android:textColor="@color/textColorPrimary"/>
 
     <ImageView
         android:id="@+id/mapImageView"
@@ -66,5 +66,5 @@
         android:scaleType="centerCrop"
         android:paddingTop="8dp"
         android:fontFamily="@font/orbitron"
-        android:textColor="@color/primaryColor"/>
+        android:textColor="@color/textColorPrimary"/>
 </LinearLayout>
